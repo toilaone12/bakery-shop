@@ -138,7 +138,7 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-    justify-content: flex-start;
+    justify-content: flex-end;
     flex-grow: row nowrap;
     width: 100%;
 }
@@ -354,8 +354,11 @@ body {
 
 .content-main__first p {
     margin-bottom: 21px;
-    font-weight: bolder;
     line-height: 1.6;
+}
+
+.content-main__first p:nth-child(2){
+    font-weight: bolder;
 }
 
 .content-main__first img {
@@ -457,7 +460,7 @@ body {
 .icon-footer-social {
     width: 31px;
     height: 31px;
-    margin: 0 1.5px;
+    margin: 0 3.5px;
     border-radius: 50%;
     display: flex;
     align-items: center;
