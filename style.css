@@ -35,11 +35,11 @@ body {
 }
 
 .header-fixed {
-    left: 0;
+    /* left: 0; */
     margin: 0 auto;
     position: fixed;
-    right: 0;
-    top: 0;
+    /* right: 0; */
+    /* top: 0; */
     box-shadow: 1px 1px 10px rgba(0,0,0,.15);
 }
 /* top-bar */
@@ -645,7 +645,7 @@ body {
     border: 2px solid #3a3535;
     border-radius: 50%;
     display: block;
-    padding: 2px 9px;
+    padding: 1px 8px;
     font-weight: bolder;
 }
 
@@ -679,10 +679,14 @@ body {
 }
 
 .recipe-sidebar__option-item {
-    color: #d100b8;
-    margin-bottom: 21px;
     font-size: 16px;
     font-weight: bolder;
+    margin-bottom: 21px;
+}
+
+.recipe-sidebar__option-item a {
+    text-decoration: none;
+    color: #d100b8;
 }
 
 /* phan lien he */

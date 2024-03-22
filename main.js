@@ -1,13 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
-        var header = document.querySelector('.header-wrapper');
+        var headerWrapper = document.querySelector('.header-wrapper');
+        var header = document.querySelector('.header'); 
         var scrollPosition = window.scrollY;
-        console.log(scrollPosition);
+        // console.log(scrollPosition);
         // Thay đổi lớp CSS khi cuộn xuống dưới
         if (scrollPosition > 0) {
-            header.classList.add('header-fixed');
+            headerWrapper.classList.add('header-fixed');
+            header.style.height = '113px';
         } else {
-            header.classList.remove('header-fixed');
+            headerWrapper.classList.remove('header-fixed');
+            header.removeAttribute('style');
         }
     });
     document.getElementById("name").addEventListener("change", function() {
