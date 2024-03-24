@@ -13,6 +13,26 @@ document.addEventListener('DOMContentLoaded', function() {
             header.removeAttribute('style');
         }
     });
+    let modal = document.getElementById("myModal");
+    let chooseRecipe = document.querySelectorAll('.choose-recipe');
+    chooseRecipe.forEach(function (choose) {
+        choose.addEventListener("click", function() {
+            modal.classList.add('show');
+        })
+    })
+
+    let close = document.querySelector('.modal-header__icon');
+    close.addEventListener("click", function() {
+        // let modal = document.getElementById("myModal");
+        modal.classList.remove('show');
+    });
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.classList.remove('show');
+        }
+    }
+
     document.getElementById("name").addEventListener("change", function() {
         let name = document.getElementById("name");
         var nameError = document.getElementById("name-error");

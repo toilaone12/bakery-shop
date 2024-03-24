@@ -18,6 +18,7 @@ body {
     width: 100%;
     line-height: 1.6;
 }
+
 /* phan gioi thieu */
 .container {
     background: #fff;
@@ -27,7 +28,7 @@ body {
 .header,
 .header-wrapper {
     background-position: 50% 0;
-    background-size:    cover;
+    background-size: cover;
     position: relative;
     transition: background-color .3s, opacity .3s;
     width: 100%;
@@ -40,8 +41,9 @@ body {
     position: fixed;
     /* right: 0; */
     /* top: 0; */
-    box-shadow: 1px 1px 10px rgba(0,0,0,.15);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .15);
 }
+
 /* top-bar */
 .top-bar {
     min-height: 30px;
@@ -89,6 +91,7 @@ body {
     cursor: pointer;
     color: #fff;
 }
+
 /* header-main */
 .header-main {
     height: 83px;
@@ -192,7 +195,7 @@ body {
     opacity: 0;
     bottom: 0;
     top: auto;
-    color: #d100b8   !important;
+    color: #d100b8 !important;
     background-color: #d100b8;
     transform: translateX(-50%);
     transition: all .3s;
@@ -205,7 +208,7 @@ body {
     opacity: 1;
 }
 
-.header-menu__child.active .header-menu__link, 
+.header-menu__child.active .header-menu__link,
 .header-menu__child.active .header-menu__link:before {
     color: #d100b8;
     opacity: 1;
@@ -213,26 +216,26 @@ body {
 
 .header-menu__search-child {
     border-radius: 50%;
-    background-color: #4f4f4f!important;
+    background-color: #4f4f4f !important;
     border-width: 1px;
     margin-left: 10px;
     padding: 4px 9px;
     object-fit: cover;
 }
 
-.header-menu__search-child > i {
+.header-menu__search-child>i {
     color: #fff;
     font-size: 15px;
 }
 
 .header-menu__search-child:hover {
-    background-color: #dd3333!important;
+    background-color: #dd3333 !important;
     cursor: pointer;
 }
 
-.header-menu__search-child:hover + .nav-dropdown__search,
+.header-menu__search-child:hover+.nav-dropdown__search,
 .nav-dropdown__search:hover,
-.header-menu__link:hover + .nav-dropdown__menu,
+.header-menu__link:hover+.nav-dropdown__menu,
 .nav-dropdown__menu:hover {
     display: block;
     opacity: 1;
@@ -242,15 +245,15 @@ body {
 .nav-dropdown__menu {
     position: absolute;
     min-width: 260px;
-    background-color: #fff; 
-    box-shadow: 1px 1px 15px rgba(0,0,0,.15);
+    background-color: #fff;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, .15);
     height: 100%;
     padding: 20px;
     left: 0;
     display: none;
     /* opacity: 0; */
-    transition: opacity 0.3s ease; 
-    z-index: 10000;   
+    transition: opacity 0.3s ease;
+    z-index: 10000;
     border-radius: 3px;
 }
 
@@ -268,7 +271,7 @@ body {
     width: 100%;
 }
 
-.nav-dropdown__menu a{
+.nav-dropdown__menu a {
     text-decoration: none;
     display: block;
     padding: 10px;
@@ -276,7 +279,7 @@ body {
     font-weight: bolder;
 }
 
-.nav-dropdown__menu a:first-child{
+.nav-dropdown__menu a:first-child {
     border-bottom: 1px solid #ccc;
 }
 
@@ -297,7 +300,7 @@ body {
     align-items: center;
 }
 
-.nav-dropdown__input input{
+.nav-dropdown__input input {
     background-color: #fff;
     color: #333;
     max-width: 100%;
@@ -311,7 +314,7 @@ body {
     outline: none;
 }
 
-.nav-dropdown__input button{
+.nav-dropdown__input button {
     padding: 10px;
     font-size: 16.5px;
     background-color: #d100b8;
@@ -357,7 +360,7 @@ body {
     line-height: 1.6;
 }
 
-.content-main__first p:nth-child(2){
+.content-main__first p:nth-child(2) {
     font-weight: bolder;
 }
 
@@ -399,6 +402,11 @@ body {
     max-width: 75%;
 }
 
+.col-8 {
+    flex-basis: 66.67%;
+    max-width: 66.67%;
+}
+
 .col-5 {
     flex-basis: 50%;
     max-width: 50%;
@@ -415,7 +423,7 @@ body {
 }
 
 .footer-first__card h2,
-.footer-second__card h2{
+.footer-second__card h2 {
     color: #d100b8;
     font-weight: bolder;
     line-height: 1.3;
@@ -482,7 +490,7 @@ body {
 }
 
 .footer-social__facebook {
-    background-color: #3a589d!important;
+    background-color: #3a589d !important;
 }
 
 .footer-social__instagram {
@@ -490,15 +498,15 @@ body {
 }
 
 .footer-social__twitter {
-    background-color: #2478ba!important
+    background-color: #2478ba !important
 }
 
 .footer-social__envelop {
-    background-color: #111!important
+    background-color: #111 !important
 }
 
 .footer-social__youtube {
-    background-color: #c33223!important
+    background-color: #c33223 !important
 }
 
 /* trang công thức làm bánh */
@@ -528,8 +536,8 @@ body {
 
 .col-inner {
     position: relative;
-    box-shadow: 0 1px 3px -2px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
-    transition: transform .3s,box-shadow .3s,background-color .3s,color .3s,opacity .3s;
+    box-shadow: 0 1px 3px -2px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    transition: transform .3s, box-shadow .3s, background-color .3s, color .3s, opacity .3s;
 }
 
 .col-inner a {
@@ -559,7 +567,7 @@ body {
     width: 30px;
     height: 2px;
     margin: 7.2px auto;
-    background-color: rgba(0,0,0, .1);
+    background-color: rgba(0, 0, 0, .1);
 }
 
 .card-recipe__description {
@@ -668,7 +676,7 @@ body {
     width: 30px;
     height: 3px;
     margin: 10px 0;
-    background-color: rgba(0,0,0, .1);
+    background-color: rgba(0, 0, 0, .1);
 }
 
 .recipe-sidebar__title {
@@ -709,7 +717,7 @@ body {
     margin-bottom: 15px;
 }
 
-.form-group label{
+.form-group label {
     display: block;
     color: #222;
     font-weight: bolder;
@@ -719,7 +727,7 @@ body {
 .form-control,
 .form-textarea {
     width: 100%;
-    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
     border: 1px solid #ddd;
     padding: 0 10.4px;
     color: #333;
@@ -749,3 +757,125 @@ body {
     min-height: 39px;
     font-weight: bolder;
 }
+
+/* Modal */
+/* Modal container */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: top 1s ease;
+}
+
+.show {
+    display: block;
+    top: 0;
+    transform: translateY(100%); /* Modal bắt đầu ẩn ngoài màn hình */
+}
+
+.show.modal {
+    transform: translateY(0); /* Modal di chuyển từ trên xuống dưới */
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 60%;
+    border-radius: 5px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0 15px; */
+}
+
+.modal-header__title {
+    font-weight: 500;
+}
+
+.modal-header__icon i{
+    font-size: 22px;
+    color: #999;
+    cursor: pointer;
+}
+
+.modal-header__icon i:hover,
+.modal-header__icon i:focus {
+    color: #3a3535;
+}
+
+.modal-body {
+    margin-top: 20px;
+}
+
+.modal-body .col-4 {
+    margin-right: 25px;
+}
+
+.modal-body .col-8 {
+    margin-left: 25px;
+}
+
+.modal-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.modal-body__title {
+    color: #d100b8;
+    font-weight: 600;
+    text-align: center;
+}
+
+.modal-body__summary {
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+}
+
+.modal-body__recipe-title,
+.modal-body__tutorial-title {
+    font-size: 20px;
+    color: #d100b8;
+    font-weight: bolder;
+}
+
+.modal-body__recipe-component {
+    padding-left: 20px;
+}
+
+.modal-body__tutorial-component {
+    list-style: none;
+}
+
+.modal-body__recipe-items {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+
+.modal-body__tutorial-items {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
