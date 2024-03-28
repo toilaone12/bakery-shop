@@ -851,21 +851,30 @@ body {
 }
 
 .modal-body__recipe-title,
-.modal-body__tutorial-title {
+.modal-body__tutorial-title,
+.modal-body__fix-title,
+.modal-body__note-title,
+.modal-body__cause-title {
     font-size: 20px;
     color: #d100b8;
     font-weight: bolder;
 }
 
-.modal-body__recipe-component {
+.modal-body__recipe-component,
+.modal-body__note-component {
     padding-left: 20px;
 }
 
-.modal-body__tutorial-component {
+.modal-body__tutorial-component,
+.modal-body__fix-component,
+.modal-body__cause-component {
     list-style: none;
 }
 
-.modal-body__recipe-items {
+.modal-body__recipe-items,
+.modal-body__fix-items,
+.modal-body__note-items,
+.modal-body__cause-items {
     text-decoration: none;
     color: #000;
     font-size: 15px;
