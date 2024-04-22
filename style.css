@@ -19,6 +19,196 @@ body {
     line-height: 1.6;
 }
 
+/* phần đăng nhập */
+.login-section {
+    font-family: "Open Sans", sans-serif !important;
+    height: 100vh; /*vh: la se chiem toan bo chieu cao cua man hinh (theo chieu doc)*/
+}
+
+.login-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 1320px;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    margin: auto;
+    display: block;
+}
+
+.login-container__child {
+    display: flex;
+    margin-left: -12px;
+    margin-right: -12px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.login-card {
+    margin: 0;
+    padding: 0 15px 30px;
+    
+}
+
+.login-card-body {
+    position: relative;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 18px;
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    background-color: #fff;
+    height: 590px;
+}
+
+.login-card-body__row {
+    display: flex;
+    margin-left: -12px;
+    margin-right: -12px;
+    flex-wrap: wrap;
+}
+
+.login-card-body__left {
+    display: block;
+    max-width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.login-card-body__image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.login-card-body__right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.login-card-container__right {
+    padding: 48px;
+    height: 100%;
+    color: #000;
+    width: 100%;
+}
+
+.logo-card-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-bottom: 4px;
+}
+
+.logo-card-icon span {
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 40px;
+    color: #d100b8;
+}
+
+.login-card-header {
+    font-family: "Open Sans", sans-serif !important;
+    margin-bottom: 25px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.form-label {
+    font-size: 14px;
+}
+
+.login-form-control {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding: .5rem 1rem;
+    font-size: 15px;
+    border-radius: 9px;
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    outline: none;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.login-card-button {
+    font-family: "Open Sans", sans-serif !important;
+    background-color: #3a3535;
+    padding: 5px 25px;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    min-height: 39px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-card-button:hover {
+    background-color: #2478ba;
+}
+
+.login-card-button__forget {
+    text-decoration: none;
+    font-size: 14px;
+    color: #3a3535;
+}
+
+.login-card-button__forget:hover {
+    color: #2478ba;
+}
+
+.login-card-button__register {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.login-card-button__register a {
+    text-decoration: none;
+    color: #3a3535;
+    padding-left: 5px;
+}
+
+.login-card-button__register a:hover {
+    color: #405DE6;
+}
+
+/* Trang đăng ký */
+.register-form-control {
+    margin-top: 5px;
+    padding: .5rem 1rem;
+    font-size: 15px;
+    border-radius: 9px;
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    outline: none;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
 /* phan gioi thieu */
 .container {
     background: #fff;
@@ -397,6 +587,11 @@ body {
     width: 100%;
 }
 
+.col-10 {
+    flex-basis: 83.333333%;
+    max-width: 83.333333%;
+}
+
 .col-9 {
     flex-basis: 75%;
     max-width: 75%;
@@ -407,9 +602,19 @@ body {
     max-width: 66.67%;
 }
 
-.col-5 {
+.col-7 {
+    flex-basis: 58.3333%;
+    max-width: 58.3333%;
+}
+
+.col-6 {
     flex-basis: 50%;
     max-width: 50%;
+}
+
+.col-5 {
+    flex-basis: 41.66667%;
+    max-width: 41.66667%;
 }
 
 .col-4 {
@@ -886,9 +1091,208 @@ body {
     font-size: 15px;
 }
 
+/* trang chi tiet */
+.container-detail {
+    margin: 100px 0;
+}
 
+.detail-left {
+    width: 100%;
+}
 
+.card-left {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 10px 10px 2px 10px;
+    margin-bottom: 12px;
+}
 
+.card-left__image {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
 
+.card-left__thumb-block {
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    padding: 5px 5px 0 5px;
+    margin: 0 5px;
+}
 
+.card-left__thumb-block:first-child {
+    margin-left: 0;
+}
 
+.card-left__thumb-block:last-child {
+    margin-right: 0;
+}
+
+.detail-right {
+    margin-left: 75px;
+}
+
+.detail-right h2 {
+    margin-bottom: 10px;
+}
+
+.detail-review {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 10px;
+}
+
+.detail-review li {
+    margin-right: 3px;
+}
+
+.detail-review i {
+    color: #e4a11b;
+}
+
+.detail-review__count {
+    font-size: 15px;
+}
+
+.detail-price {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.detail-description {
+    font-size: 15px;
+    text-align: justify;
+}
+
+.detail-separate {
+    margin: 20px 0;
+    border: 1px solid #e0e0e0;
+}
+
+.detail-option-1 label {
+    font-size: 15px;
+}
+
+.detail-quantity__input {
+    margin-top: 10px;
+    display: flex;
+}
+
+.detail-quantity__input .fa-plus {
+    border: 1px solid #e0e0e0;
+    font-size: 13px;
+    padding: 10px 12px;
+    cursor: pointer; 
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.detail-quantity__input .fa-minus {
+    border: 1px solid #e0e0e0;
+    font-size: 13px;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.detail-quantity__input input {
+    outline: none;
+    border-radius: 0;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    width: 25%;
+}
+
+.detail-option-2 {
+    float: right;
+}
+
+.detail-option-2 label{
+    font-size: 15px;
+}
+
+.detail-type__select {
+    display: block;
+    border: 1px solid #e0e0e0;
+    padding: 7px 30px;
+    border-radius: 3px;
+    margin-top: 10px;
+    height: 34px;
+    outline: none;
+    font-size: 15px;
+}
+
+.detail-type__select option {
+    padding: 4px 10px;
+    color: #333;
+    background-color: #FFF;
+}
+
+.detail-buy {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.detail-button {
+    outline: none;
+    padding: 12px 25px;
+    width: 35%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #3a589d;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif !important;
+}
+
+.detail-button:first-child {
+    margin-right: 20px;
+}
+
+.detail-button:hover {
+    background-color: #2478ba;
+}
+
+.detail-info {
+    margin-top: 50px;
+    border-top: 1px solid #e0e0e0;
+    padding-bottom: 100px;
+    background-color: #fbfbfb;
+}
+
+.detail-info__container {
+    background-color: #fff;
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.detail-info__card {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.detail-info__items {
+    text-align: center;
+    width: 100%;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    padding: 12px 20px;
+    color: #0000008c;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.detail-info__items.active {
+    color: #285192;
+    background-color: #e3ebf7;
+}
