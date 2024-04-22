@@ -209,6 +209,14 @@ body {
 .justify-content-between {
     justify-content: space-between;
 }
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
 /* phan gioi thieu */
 .container {
     background: #fff;
@@ -1267,11 +1275,14 @@ body {
 }
 
 .detail-info__container {
-    background-color: #fff;
     position: relative;
     max-width: 1080px;
     margin: 0 auto;
     margin-top: 50px;
+}
+
+.detail-info__container .col-7 {
+    background-color: #fff;
 }
 
 .detail-info__card {
@@ -1282,7 +1293,7 @@ body {
 
 .detail-info__items {
     text-align: center;
-    width: 100%;
+    width: 90%;
     border-radius: 4px;
     background-color: #f7f7f7;
     padding: 12px 20px;
@@ -1294,5 +1305,6 @@ body {
 
 .detail-info__items.active {
     color: #285192;
+    margin-right: 10px;
     background-color: #e3ebf7;
 }
