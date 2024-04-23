@@ -102,6 +102,35 @@ function htmlTrick(data,id){
     return html;
 }
 
+const urlParams = new URLSearchParams(window.location.search); // lay get id bai viet
+
+// Lấy giá trị của tham số 'id'
+const id = urlParams.get('id');
+
+//lay noi dung trang chi tiet khoa hoc
+// let image = detailItems[id-1].image;
+// let thumb = detailItems[id-1].thumb;
+// console.log(thumb);
+//chuyen tab noi dung
+let items = document.querySelectorAll('.detail-info__items');
+let tabs = document.querySelectorAll('.detail-info__tab');
+items.forEach(function(item) {
+    item.addEventListener("click", function(){
+        //xoa nen mau xanh o click cu
+        items.forEach(function(item) {
+            item.classList.remove('active');
+        });
+        //xoa noi dung ben trong
+        tabs.forEach(function(tab) {
+            tab.classList.remove('show-tab');
+        });
+        let href = item.getAttribute('data-href');
+        let tab = document.querySelector('.detail-info__detail-'+href);
+        tab.classList.add('show-tab'); //hien thi noi dung o tab moi
+        item.classList.add('active'); //hien thi noi dung o items tren bang ne mau xanh
+    })
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     //lan chuot keo header xuong
     window.addEventListener('scroll', function() {
@@ -156,25 +185,26 @@ document.addEventListener('DOMContentLoaded', function() {
             modalTrick.classList.remove('show');
         }
     }
+
     //ktra ten
-    document.getElementById("name").addEventListener("change", function() {
-        let name = document.getElementById("name");
+    let nameUser = document.getElementById("name");
+    nameUser.addEventListener("change", function() {
         var nameError = document.getElementById("name-error");
-        if(name.value.length == 0){
+        if(nameUser.value.length == 0){
             nameError.innerHTML = "Vui lòng nhập tên của bạn";
         }
     });
     //ktra email
-    document.getElementById("email").addEventListener("change", function() {
-        let email = document.getElementById("email");
+    let email = document.getElementById("email");
+    email.addEventListener("change", function() {
         var emailError = document.getElementById("email-error");
         if(email.value.length == 0){
             emailError.innerHTML = "Vui lòng nhập email của bạn";
         }
     });
     //ktra so dien thoai
-    document.getElementById("phone").addEventListener("change", function() {
-        let phone = document.getElementById("phone");
+    let phone = document.getElementById("phone");
+    phone.addEventListener("change", function() {
         var phoneError = document.getElementById("phone-error");
         if(phone.value.length == 0){
             phoneError.innerHTML = "Vui lòng nhập số điện thoại của bạn";
